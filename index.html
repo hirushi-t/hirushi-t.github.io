@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mia Baker · AI ethics</title>
-  <!-- professional font changed to MICHROMA (Google Fonts) -->
+  <title>Mia Baker · AI ethics activist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Michroma – geometric sans-serif with technical, futuristic character -->
   <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
   <style>
-    /* ---------- reset / base (black background, white text) ---------- */
     * {
       margin: 0;
       padding: 0;
@@ -31,7 +28,6 @@
       padding: 0 1.5rem;
     }
 
-    /* re‑define variables for dark mode */
     :root {
       --bg-dark: #000000;
       --accent-subtle: #1e1e1e;
@@ -42,14 +38,12 @@
       --shadow-dark: 0 6px 20px rgba(255, 255, 255, 0.02);
     }
 
-    /* ---------- typography ---------- */
     h1, h2, h3 {
       font-weight: 400;
       letter-spacing: var(--letter-tight);
       color: var(--text-light);
     }
 
-    /* ---------- header (fixed, dark, subtle) ---------- */
     .site-header {
       position: fixed;
       top: 0;
@@ -98,7 +92,6 @@
       color: #000000;
     }
 
-    /* kill blue outlines / underlines */
     a, button, .header-btn, .footer-email a {
       -webkit-tap-highlight-color: transparent;
       outline: none;
@@ -119,7 +112,7 @@
       border-bottom-color: #ffffff;
     }
 
-    /* ---------- hero section (dark, centered) ---------- */
+
     .hero {
       background-color: var(--accent-subtle);
       min-height: 60vh;
@@ -145,8 +138,8 @@
 
     .hero-photo {
       flex-shrink: 0;
-      width: 240px;
-      height: 240px;
+      width: 320px;
+      height: 320px;
       border-radius: 50%;
       background: #333333;
       box-shadow: var(--shadow-dark);
@@ -166,23 +159,21 @@
       margin: 0 auto;
     }
 
-    /* --- UPDATED: name stays large, second line smaller --- */
     .hero-title {
       font-size: clamp(2.8rem, 8vw, 5rem);
       font-weight: 400;
       letter-spacing: -0.04em;
       line-height: 1.0;
       color: var(--text-light);
-      margin-bottom: 0.2rem;  /* reduced spacing between lines */
+      margin-bottom: 0.2rem;
     }
 
-    /* target the second line (AI Ethics Activist) within the same h1 */
     .hero-title .sub-line {
-      display: block;          /* ensures it's on its own line */
-      font-size: 1.6rem;       /* significantly smaller than name */
+      display: block;        
+      font-size: 1.6rem;      
       letter-spacing: -0.02em;
       margin-top: 0.25rem;
-      color: var(--text-soft); /* slightly softer white */
+      color: var(--text-soft); 
       font-weight: 400;
     }
 
@@ -193,7 +184,6 @@
       letter-spacing: -0.01em;
     }
 
-    /* ---------- BIO SECTION ---------- */
     .bio-section {
       max-width: 800px;
       margin: 2.5rem auto 3rem auto;
@@ -222,13 +212,11 @@
         height: 180px;
         border-width: 5px;
       }
-      /* adjust sub-line on mobile if needed */
       .hero-title .sub-line {
         font-size: 1.3rem;
       }
     }
 
-    /* ---------- footer ---------- */
     .site-footer {
       background: #0a0a0a;
       padding: 3rem 2rem 2rem;
@@ -240,7 +228,7 @@
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       gap: 2rem;
     }
@@ -258,16 +246,6 @@
       border-bottom-color: var(--text-light);
     }
 
-    .footer-copyright {
-      color: var(--text-soft);
-      font-size: 0.9rem;
-      width: 100%;
-      text-align: center;
-      margin-top: 2rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border-dark);
-    }
-
     .text-soft {
       color: var(--text-soft);
     }
@@ -275,7 +253,7 @@
     @media (max-width: 700px) {
       .footer-content {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
       }
     }
 
@@ -286,7 +264,6 @@
 </head>
 <body>
   <div class="site-wrapper">
-
     <header class="site-header">
       <div class="header-inner">
         <a href="#" class="header-btn">Resume</a>
@@ -300,7 +277,6 @@
           <img src="mia_photo.jpeg" alt="Mia Baker">
         </div>
         <div class="hero-text">
-          <!-- UPDATED: name large, second line smaller using span.sub-line -->
           <h1 class="hero-title">
             Mia Baker
             <span class="sub-line">AI Ethics Activist</span>
@@ -320,12 +296,8 @@
         <div class="footer-email">
           <a href="mailto:mia.t.baker@gmail.com">mia.t.baker@gmail.com</a>
         </div>
-        <div class="footer-copyright">
-          © 2026 INSERT LICENSE
-        </div>
       </div>
     </footer>
-
-  </div> <!-- end site-wrapper -->
+  </div> 
 </body>
 </html>
